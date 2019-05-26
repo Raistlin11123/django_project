@@ -1,0 +1,13 @@
+<h1>Bienvenu sur notre network d'entreprise</h1>
+
+<p><a href="{% url 'login' %}">Se connecter</a></p>
+
+<p>Liste des différents profils du network: </p>
+<p>Cliquez sur les pseudos pour accéder aux murs</p>
+<ul>
+    {% for profil in profils %}
+    <li><a href="{% url 'wall' profil.id %}"> {{ profil.user.username }} </a></li>
+    {% empty %}
+    <li>Il n'y en a pas actuellement.</li>
+    {% endfor %}
+</ul>
