@@ -25,7 +25,7 @@ SECRET_KEY = 's^8=kwqp%8&lf5^$ow-r#(22mvh1=15_g2iny0zx$u^#=0#^$m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dry-dusk-35166.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
